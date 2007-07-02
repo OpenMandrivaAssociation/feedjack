@@ -11,6 +11,8 @@ Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 Buildrequires:	python-devel
 BuildArch:      noarch
 BuildRequires:  python-django
+BuildRequires:  python-setuptools 
+Requires:       python-django python-feedparser
 %description
 Feedjack is a rss and atom feed aggregator.
  
