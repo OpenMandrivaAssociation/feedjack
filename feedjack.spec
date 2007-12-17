@@ -7,7 +7,6 @@ License:	BSD
 Group:      Networking/News 
 URL:		http://www.feedjack.org/
 Source:		http://www.feedjack.org/download/%{real_name}-%{version}.tar.bz2
-Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 Buildrequires:	python-devel
 BuildArch:      noarch
 BuildRequires:  python-django
