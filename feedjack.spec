@@ -1,7 +1,7 @@
 %define     real_name  Feedjack
 Name:		feedjack
-Version:	0.9.10
-Release:	%mkrel 3
+Version:	0.9.16
+Release:	%mkrel 1
 Summary:	A web based rss and atom feed aggregator 
 License:	BSD
 Group:      Networking/News 
