@@ -7,8 +7,7 @@ License:	BSD
 Group:      Networking/News 
 URL:		http://www.feedjack.org/
 Source:		http://www.feedjack.org/download/%{real_name}-%{version}.tar.bz2
-Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-root
-Buildrequires:	python-devel
+BuildRequires:	python-devel
 BuildArch:      noarch
 BuildRequires:  python-django
 BuildRequires:  python-setuptools 
@@ -38,6 +37,7 @@ But FeedJack also has some advantages:
 
 %prep
 %setup -q -n %real_name-%version
+find . -name "*.py" |xargs 2to3 -w
 
 %build
 python setup.py build
