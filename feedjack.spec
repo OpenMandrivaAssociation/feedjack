@@ -45,47 +45,12 @@ python setup.py build
 %install
 python setup.py install --root %buildroot
 
-%clean
-rm -rf %{buildroot}
 
 %files
-%defattr(-,root,root)
 %doc LICENSE AUTHORS  CHANGES README
 %doc INSTALL
 %{_bindir}/*
 %{py_puresitedir}/%{name}
 %{py_puresitedir}/*.egg-info
 
-
-%changelog
-* Tue Nov 02 2010 Michael Scherer <misc@mandriva.org> 0.9.16-4mdv2011.0
-+ Revision: 592394
-- rebuild for python 2.7
-
-* Thu Sep 10 2009 Thierry Vignaud <tv@mandriva.org> 0.9.16-3mdv2010.0
-+ Revision: 437530
-- rebuild
-
-* Tue Jan 06 2009 Funda Wang <fwang@mandriva.org> 0.9.16-2mdv2009.1
-+ Revision: 325237
-- rebuild
-
-* Tue Sep 09 2008 Michael Scherer <misc@mandriva.org> 0.9.16-1mdv2009.0
-+ Revision: 282932
-- update to new version 0.9.16
-
-* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 0.9.10-3mdv2009.0
-+ Revision: 245077
-- rebuild
-
-* Fri Dec 21 2007 Olivier Blin <oblin@mandriva.com> 0.9.10-1mdv2008.1
-+ Revision: 136411
-- restore BuildRoot
-
-  + Thierry Vignaud <tv@mandriva.org>
-    - kill re-definition of %%buildroot on Pixel's request
-
-* Mon Jul 02 2007 Michael Scherer <misc@mandriva.org> 0.9.10-1mdv2008.0
-+ Revision: 47104
-- Import feedjack
 
