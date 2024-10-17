@@ -5,7 +5,7 @@ Release:	5
 Summary:	A web based rss and atom feed aggregator 
 License:	BSD
 Group:      Networking/News 
-URL:		http://www.feedjack.org/
+URL:		https://www.feedjack.org/
 Source:		http://www.feedjack.org/download/%{real_name}-%{version}.tar.bz2
 BuildRequires:	python-devel
 BuildArch:      noarch
